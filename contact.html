@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sam Baseley - About</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body onload="lastModified()">
+        <section class="header">
+            <nav>
+                <div class="title-link">
+                    <a href="index.html">Sam K. Baseley</a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+
+        <!--Footer-->
+        <section class="footer">
+            <div class="personalInfo">
+                <p>Samuel Kenneth Baseley,<br>Games programmer & designer.</p>
+            </div>
+            <div class="quote">
+                <p>Subdue the regret. Dust yourself off, proceed.<br>You'll get it in the next life, where you don't make mistakes.<br>Do what you can with this one, while you're alive.</p>
+            </div>
+            <div class="siteInfo">
+                <p>Last updated:</p> 
+                <span id="demo"></span>
+            </div>
+        </section>
+
+        <!--Javascript-->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+            function lastModified(){
+                var x = document.lastModified;
+                document.getElementById("demo").innerHTML = new Date(document.lastModified).toISOString().substr(0,10);
+            }
+        </script>
+    </body>
+</html>
