@@ -91,6 +91,9 @@ nav .fa{
     display: none;
 }
 
+.chatgptInstructions{
+    display: none;
+}
 
 
 /*-----Portfolio-----*/
@@ -246,6 +249,14 @@ nav .fa{
     background: linear-gradient(rgba(21, 102, 145, 0.4) , rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(254, 106, 0, 0.4) );
     height: 100vh;
 }
+.detailsDiv h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 50px;
+    
+}
 
 .detailsSection{
     background: #525252;
@@ -292,4 +303,34 @@ nav .fa{
     font-size: 30px;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.contactMeSpeel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    width: 500px;
+}
+
+/*---About---*/
+.aboutTripleSection{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.aboutTriple{
+    width: 30%;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.503);
+    border-radius: 50px;
+}
+
+.aboutTriple h2{
+    text-align: center;
+    color: #156691;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
