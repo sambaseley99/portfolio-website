@@ -23,7 +23,14 @@ nav{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
+    transition: 0.5s;
 }
+
+.title-link a:hover{
+    color: #fe6a00;
+    transition: 0.5s;
+}
+
 nav img{
     width: 150px;
 }
@@ -81,6 +88,7 @@ nav img{
     background: transparent;
     position: relative;
     cursor: pointer;
+    transition: 0.25s;
 }
 .hero-btn:hover{
     border: 1px solid #156691;
@@ -206,22 +214,34 @@ nav .fa{
     border-bottom: dashed #d7d7d7;
 }
 
-.detailsDiv{
-    height: 100vh;
+.detailsSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: #525252;
+    overflow: auto;
+
 }
+
+.detailsDiv{
+    width: 50%;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+}
+
 .detailsDiv h1{
     text-align: center;
-    padding-top: 50px;
     padding-bottom: 20px;
     font-weight: 900;
     font-size: 50px;
     
 }
 
-.detailsSection{
-    background: #525252;
-    overflow: auto;
-
+.detailsDiv p{
+    font-weight: 500;
 }
 
 .contactPageSplit{
@@ -290,7 +310,9 @@ nav .fa{
 
 .aboutTriple h2{
     text-align: center;
-    color: #156691;
+    color: #1c80b5;
+    font-weight: bold;
+    font-size: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
