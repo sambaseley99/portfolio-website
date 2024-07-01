@@ -72,6 +72,7 @@ nav img{
 }
 .text-box h1{
     font-size: 62px;
+    text-shadow: 1px 4px 3px rgba(0,0,0,0.8);
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -110,39 +111,61 @@ nav .fa{
     margin: auto;
     text-align: center;
     background-color: #525252;
-    border-top: 5px dashed #d7d7d7;
+    border-top: 5px solid #d7d7d7;
 }
-.portfolio h1{
-    padding: 50px;
+
+.portfolioIntro{
+ padding: 50px;
+ background-color:#a0a0a0;
+}
+
+.portfolioIntro h1{
     font-size: 36px;
     font-weight: 600;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
 }
-.portfolio p{
-    color: #a0a0a0;
+
+.portfolioIntro p{
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
 }
-.display{
-    margin-top: 5%;
-}
+
 .showcase{
-    background: linear-gradient(rgba(21, 102, 145, 0.4) , rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(254, 106, 0, 0.4) );
     border-top: 5px solid #d7d7d7;
     overflow: auto;
 }
+
+.showcase h3{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+.showcase h4{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: #222222;
+}
+
 .showcaseBody{
     margin: 2%;
     display: flex;
     justify-content: space-between;
 }
+
 .showcaseColumn{
     text-align: left;
+    color:#ccc;
 }
+
 .showcaseLinkSection{
     text-align: left;
     padding: 20px;
 }
+
 .showcaseLink{
     display:inline-flex;
     background: #fe6a00;
@@ -157,17 +180,21 @@ nav .fa{
     line-height: 40px;
     text-decoration: none;
     color: #000000;
+    box-shadow: 0px 2px 4px 4px rgba(0,0,0,0.4);
     transition: 0.33s;
 }
+
 .showcaseLink:hover{
     background: #d7d7d7;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 4px 4px rgba(0,0,0,0.3);
     transition: 0.75s;
 }
+
 .showcaseLink h5{
     font-weight: 900;
     font-size: 15px;
 }
+
 .icon{
     text-align: center;
     font-size: 30px;
@@ -182,6 +209,7 @@ nav .fa{
     justify-content: space-between;
     padding: 20px;
     background: #222222;
+    box-shadow: 0px -1px 4px 2px rgba(0,0,0,0.3);
 }
 
 .personalInfo{
@@ -264,12 +292,13 @@ nav .fa{
     line-height: 40px;
     text-decoration: none;
     color: #000000;
+    box-shadow: 0px 2px 4px 4px rgba(0,0,0,0.4);
     transition: 0.33s;
 }
 
 .contactLink:hover{
     background: #d7d7d7;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 4px 4px rgba(0,0,0,0.3);
     transition: 0.75s;
 }
 
@@ -311,6 +340,7 @@ nav .fa{
 .aboutTriple h2{
     text-align: center;
     color: #1c80b5;
+    text-shadow: 0px 0px 3px rgba(28, 128, 181,0.5);
     font-weight: bold;
     font-size: 30px;
     padding-top: 10px;
@@ -349,10 +379,13 @@ nav .fa{
     outline: none;
     font-size: 20px;
     font-weight: 600;
+    box-shadow: 3px 1px 5px 3px rgba(0,0,0,0.8);
+    transition: 0.1s;
 }
 
 .active, .collapsibleButton:hover{
     background-color: #ccc;
+    box-shadow: none;
 }
 
 .collapsibleContent{
@@ -370,6 +403,8 @@ nav .fa{
     color: #444;
     float: right;
     margin-left: 5px;
+    box-shadow: none;
+    transition: 0.1s;
 }
 
 .collapsibleContent p{
@@ -384,41 +419,200 @@ nav .fa{
     content: '\f068';
 }
 
-/*---Mobile View---*/
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    } 
-    .text-box p{
-        font-size: 10px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: #515968;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-    }
-    .showcaseLinkSection{
-        text-align: center;
-        padding: 20px;
+.rotateEEgg{
+    display: none;
+}
+
+@media (pointer:none), (pointer:coarse){
+    /*---Mobile View---*/
+    @media(max-width: 700px){
+        /*---Main/Portfolio---*/
+        html, body{
+            overflow-x: hidden;
+        }
+
+        body{
+            position: relative;
+        }
+
+        .text-box h1{
+            font-size: 30px;
+        }
+
+        .text-box p{
+            font-size: 20px;
+        }
+
+        .nav-links ul li{
+            display: block;
+        }
+
+        .nav-links{
+            position: absolute;
+            background: #515968;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -210px;
+            text-align: left;
+            z-index: 2;
+            transition: 1s;
+            box-shadow: -2px 0px 4px 6px rgba(0,0,0,0.4);
+        }
+
+        nav .fa{
+            display: block;
+            color: #fff;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .nav-links ul{
+            padding: 30px;
+        }
+
+        .showcaseLinkSection{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .showcaseBody{
+            margin: 0%;
+            display: flex;
+            flex-flow: column;
+        }
+
+        .showcaseColumn{
+            margin: 10%;
+        }
+
+        #showcaseVideo{order:1;}
+        #showcaseText{order:2;}
+
+        .videoWrapper{
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            box-shadow: 0px 2px 4px 4px rgba(0,0,0,0.4);
+        }
+        
+        .videoWrapper iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .quote{
+            display: none;
+        }
+
+        /*---About---*/
+
+        .aboutTripleSection{
+            display: block;
+            margin-top: 0%;
+        }
+
+        .aboutTriple{
+            width: auto;
+            margin: 10px;
+            border-radius: 30px;
+        }
+
+        .aboutTriple h2{
+            text-align: center;
+            color: #1c80b5;
+            font-weight: bold;
+            font-size: 30px;
+            padding-top: 0px;
+            padding-bottom: 10px;
+        }
+        /*---Blog---*/
+
+        .collapsibleButton{
+            font-size: 18px;
+        }
+
+        /*---Contact---*/
+        
+        .detailsSection{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background: #525252;
+            overflow: hidden;
+        }
+
+        .detailsDiv{
+            width: 80%;
+            padding: 20px;
+            margin-right: 0px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+        }
+
+        .contactPageSplit{
+            display: block;
+        }
+
+        .detailsDiv h1{
+            text-align: center;
+            font-weight: 900;
+            font-size: 40px;
+            text-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+        }
+        
+        .detailsDiv p{
+            text-align: center;
+            font-weight: 500;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .contactMeSpeel{
+            display: auto;
+            justify-content: auto;
+            align-items: auto;
+            padding-right: none;
+            width: 100%;
+        }
+
+        .contactLink{
+            width: auto;
+        }
     }
 
+    @media (orientation: landscape ) {
+        .footer{display: none;}
+        .portfolio{display: none;}
+        .header{display: none;}
+        .headerBlog{display: none;}
+        .headerContact{display:none;}
+        .detailsSection{display: none;}
+        .articles{display: none;}
+
+        .rotateEEgg{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            background-color: #525252;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            color: #d7d7d7;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        
+        .rotateEEgg p{
+            margin: 20px;
+            color: #d7d7d7;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
 }

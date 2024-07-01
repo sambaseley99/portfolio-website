@@ -16,13 +16,13 @@
         <a href="index.html">Sam K. Baseley</a>
         </div>
         <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
-             <ul>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-             </ul>
+            </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
@@ -38,19 +38,21 @@
 
 <!--Portfolio-->
 <section class="portfolio">
-
+    <div class="portfolioIntro">
         <h1>Portfolio</h1>
         <p>Here are some of the projects I am particularly proud of.</p>
-
+    </div>
     <div class="display">
         <div class="showcase">
             <h3>Wild in the West:</h3>
             <h4>Unreal Engine 4.27.2</h4>
             <div class="showcaseBody">
-                <div class="showcaseColumn">
+                <div class="showcaseColumn" id="showcaseText">
                     <p>Wild in the West is my 3rd year university project, this was a collaborative effort with members of Ironstrike Games Ltd. <br><br> The game is based around a small town in the wilds of the American west, which is being invaded by robots. The player must fight off these robots and help the towns people as they make their way to the heart of the problem; a crashed spaceship in an abandoned gold mine.<br><br> This game is aimed at a younger audience and as such has a very cartoon-y art style. with this also being targeted to children, we are sticking strongly to the PEGI age ratings regulations. <br><br> You can download and play a demo of the game via the link below. We also have a Game Design Document which covers all the aspects of the design and implementation in detail. Lastly please consider checking out the developer meeting podcasts where we recorded our weekly team meetings.</p> 
                 </div>
-                <div class="showcaseColumn"><iframe width="560" height="315" src="https://www.youtube.com/embed/rgEv4gUMWUk?si=ubLW1L2k5Tyqd1bS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="videoWrapper" id="showcaseVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rgEv4gUMWUk?si=zFFPBkoQFGUWoPB_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="showcaseLinkSection">
                 <a href="https://hyper-32.itch.io/wild-in-the-west" class="showcaseLink"><div class="icon"><i class="fa fa-link" aria-hidden="false"></i></div> <h5>itch.io Page</h5></a>
@@ -64,10 +66,12 @@
             <h3>Galatea</h3>
             <h4>Unreal Engine 4.26.2</h4>
             <div class="showcaseBody">
-                <div class="showcaseColumn">
-                    <p>This is the result of my second year long term project on my Games Development course. <br> This was a cooperative group project with two others (Heinrich & Irma Adams) as part of Team SHI, where I took the role of programmer.<br> The key idea we wanted to work on was a puzzle game that was different from the standard Portal, Myst style logic based puzzle games.<br> Instead we went with a puzzle game with a focus on movement puzzles that require planning and understanding to complete.<br><br>The artistic style we went for was inspired by the likes of Salvador Dalí, and André Breton. The title is also based on one of Dalí's works "Galatea of the spheres". <br> This project not only comprised of the game project, but also the business plans and documenting the entire process in a professional manner. <br> The game design document is available to view at the link below. </p> 
+                <div class="showcaseColumn" id="showcaseText">
+                    <p>This is the result of my second year long term project on my Games Development course. <br> This was a cooperative group project with two others (Heinrich & Irma Adams) as part of Team SHI, where I took the role of programmer.<br><br> The key idea we wanted to work on was a puzzle game that was different from the standard Portal, Myst style logic based puzzle games.<br><br> Instead we went with a puzzle game with a focus on movement puzzles that require planning and understanding to complete.<br><br>The artistic style we went for was inspired by the likes of Salvador Dalí, and André Breton. The title is also based on one of Dalí's works "Galatea of the spheres". <br><br> This project not only comprised of the game project, but also the business plans and documenting the entire process in a professional manner. <br><br> The game design document is available to view at the link below. </p> 
                 </div>
-                <div class="showcaseColumn"><iframe width="560" height="315" src="https://www.youtube.com/embed/4_LnqmwbJys?si=A-x-jIP43WdE7VkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="videoWrapper" id="showcaseVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4_LnqmwbJys?si=A-x-jIP43WdE7VkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                </div>
             </div>
             <div class="showcaseLinkSection">
                 <a href="https://drive.google.com/file/d/1X4QUQF_qcAvriWL88Xsnh7zzJXCOq1jb/view?usp=sharing" class="showcaseLink"><div class="icon"><i class="fa fa-download" aria-hidden="false"></i></div> <h5>GDD Download</h5></a>
@@ -79,7 +83,7 @@
             <h4>HTML, CSS & Javascript</h4>
             <div class="showcaseBody">
                 <div class="showcaseColumn">
-                    <p>This website was created by myself in HTML using CSS styles and a splash of Javascript.<br> This is my first use of both, so I must praise GreatStack on YouTube and W3Schools for producing great tutorials and documentation that even a novice like me can understand. <br> The source code is public on Github at the repository below and the page is hosted on Github's 'pages' system. <br><br> This website also works on mobile, so please check it out. Please, I worked so hard on getting it to work. (╥_╥)  </p> 
+                    <p>This website was created by myself in HTML using CSS styles and a splash of Javascript.<br><br> This is my first use of both, so I must praise GreatStack on YouTube and W3Schools for producing great tutorials and documentation that even a novice like me can understand. <br><br> The source code is public on Github at the repository below and the page is hosted on Github's 'pages' system. <br><br> This website also works on mobile, so please check it out. Please, I worked so hard on getting it to work. (╥_╥)  </p> 
                 </div>
             </div>
             <div class="showcaseLinkSection">
@@ -107,6 +111,10 @@
     </div>
 </section>
 
+<section class="rotateEEgg">
+    <p>Okay, thanks for trying to break my site. You're a real piece of work, trying to break someone else's property you know that!</p>
+</section>
+
 <!--Javascript-->
 <script>
 
@@ -115,7 +123,7 @@
         navLinks.style.right = "0";
     }
     function hideMenu(){
-        navLinks.style.right = "-200px";
+        navLinks.style.right = "-210px";
     }
     function lastModified(){
         var x = document.lastModified;
